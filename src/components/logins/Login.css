@@ -1,0 +1,36 @@
+.login {
+    /* background-image: url(/src/assets/empty-wooden-table-with-old-chalkboard-background.webp); */
+    background-image: url(/src/assets/tekstura-fon-cvet-chernyy.jpg);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    background-color: white;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    flex-direction: column;
+}
+
+.imgLogin {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px #c7bfbf;
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
