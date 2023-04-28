@@ -7,6 +7,8 @@ import StudentsLogin from "../components/logins/StudentLogin";
 import TeacherLogin from "../components/logins/TeacherLogin";
 import Student from "../components/student/Student";
 import Teacher from "../components/teacher/Teacher";
+import StudentProfile from "../components/student/StudentProfile";
+
 
 const AllRoute = () => {
   return (
@@ -19,7 +21,9 @@ const AllRoute = () => {
         <Route path="/admin/dashboard" element={<Admin/>} />
         <Route path="/student/dashboard" element={<Student />} />
         <Route path="/teacher/dashboard" element={<Teacher />} />
+        <Route path="/student/profile" element={<StudentProfile />} />
 
+      
       </Routes>
     </Router>
   );

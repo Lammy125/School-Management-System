@@ -6,6 +6,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import { AccountCircle, Class, ListAlt, Logout, NoteAdd, QuestionAnswer } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const StudentNavBar = () => {
   const text = {
@@ -30,6 +31,7 @@ const StudentNavBar = () => {
           aria-label="main mailbox folders"
           className="navBar"
         >
+          <Link to='/student/profile'>
           <ListItemButton
             selected={selectedIndex === 0}
             onClick={(event) => handleListItemClick(event, 0)}
@@ -43,6 +45,8 @@ const StudentNavBar = () => {
               primaryTypographyProps={{ style: text }}
             />
           </ListItemButton>
+          </Link>
+
           <ListItemButton
             selected={selectedIndex === 1}
             onClick={(event) => handleListItemClick(event, 1)}
@@ -67,7 +71,7 @@ const StudentNavBar = () => {
               primaryTypographyProps={{ style: text }}
             />
           </ListItemButton>
-          <ListItemButton
+          {/* <ListItemButton
             selected={selectedIndex === 3}
             onClick={(event) => handleListItemClick(event, 3)}
           >
@@ -90,7 +94,7 @@ const StudentNavBar = () => {
               primary="Result"
               primaryTypographyProps={{ style: text }}
             />
-          </ListItemButton>
+          </ListItemButton> */}
           <ListItemButton
             selected={selectedIndex === 5}
             onClick={(event) => handleListItemClick(event, 5)}
